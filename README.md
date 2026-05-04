@@ -1,45 +1,70 @@
-🧮 Java Calculator
+# 🧮 Calculadora em Java
 
-Um projeto simples de calculadora desenvolvido em Java, com execução via terminal, criado com o objetivo de praticar lógica de programação, estruturas condicionais e laços de repetição.
+Calculadora de console desenvolvida em Java, com suporte às quatro operações matemáticas básicas e loop de execução contínua.
 
-🚀 Funcionalidades
-Soma de dois números
-Subtração de dois números
-Multiplicação de dois números
-Divisão de dois números
-Validação de operação inválida
-Loop para realizar múltiplos cálculos
-Opção de continuar ou sair do programa
-🧠 Tecnologias utilizadas
-Java
-Scanner (entrada de dados)
-Estruturas condicionais (if / switch)
-Estruturas de repetição (while)
-📂 Estrutura do projeto
-src/
- └── util/
-      └── Calculator.java
-▶️ Como executar o projeto
-Clone o repositório:
+## 📋 Funcionalidades
+
+- **Soma** entre dois números inteiros
+- **Subtração** entre dois números inteiros
+- **Multiplicação** entre dois números inteiros
+- **Divisão** entre dois números inteiros (com tratamento de divisão por zero)
+- Loop interativo: o usuário pode realizar múltiplos cálculos sem reiniciar o programa
+
+## 🚀 Como executar
+
+### Pré-requisitos
+
+- [JDK 11+](https://www.oracle.com/java/technologies/downloads/) instalado
+
+### Compilando e rodando
+
+```bash
+# Clone o repositório
 git clone https://github.com/josegabriel2006/Projetos_Java.git
-Abra o projeto em sua IDE (IntelliJ, Eclipse ou VS Code)
-Execute a classe:
-Calculator.java
-💡 Aprendizados
-Lógica de programação
-Estruturas de decisão
-Estruturas de repetição
-Entrada e saída no console
-Organização de código em Java
-📸 Exemplo de execução
+cd Projetos_Java
+
+# Compile
+javac src/util/Calculator.java -d out
+
+# Execute
+java -cp out util.Calculator
+```
+
+## 🖥️ Exemplo de uso
+
+```
 == CALCULADORA ==
 Digite um Número: 10
-Digite outro Número: 5
+Digite outro Número: 3
 
-OPERAÇÃO: 1
+Qual operação deseja escolher?
+[1] - SOMA
+[2] - SUBTRAÇÃO
+[3] - MULTIPLICAÇÃO
+[4] - DIVISÃO
+OPERAÇÃO: 4
 
 RESULTADO:
-SOMA = 15
-👨‍💻 Autor
+DIVISÃO = 3.3333333333333335
 
-José Gabriel
+Deseja continuar (s/n)? n
+```
+
+## 🗂️ Estrutura do projeto
+
+```
+Projetos_Java/
+└── src/
+    └── util/
+        └── Calculator.java
+```
+
+## 🛠️ Tecnologias
+
+- Java (JDK 21)
+- `java.util.Scanner` para leitura de input
+- `java.util.Locale` para formatação numérica
+
+## 👤 Autor
+
+**José Gabriel** — [@josegabriel2006](https://github.com/josegabriel2006)
